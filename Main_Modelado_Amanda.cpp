@@ -237,9 +237,9 @@ int main() {
 
 		// Brazo derecho 
 		model = glm::mat4(1.0f);
-		model = glm::scale(model, glm::vec3(0.2f, 0.4f, 0.4f));
-		model = glm::translate(model, glm::vec3(1.7f, -1.0f, 0.0f));
-		model = glm::rotate(model, glm::radians(180.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+		model = glm::scale(model, glm::vec3(0.1f, 0.6f, 0.4f));
+		model = glm::translate(model, glm::vec3(8.0f, 1.0f, 0.0f));
+		model = glm::rotate(model, glm::radians(90.0f), glm::vec3(0.0f, 1.0f, 0.0f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 
